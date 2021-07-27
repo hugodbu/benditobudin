@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Lexend", sans-serif; }
+
+.colorTitulos {
+  color: crimson; }
+
+.coloresNav {
+  color: grey;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 20px; }
+
+.coloresNav:hover {
+  color: white; }
+
+p {
+  color: grey;
+  font-style: normal;
+  font-family: "Lexend", sans-serif;
+  font-weight: normal;
+  font-size: 14px; }
+
+/* ESTILO NAV /*
+/* Declaro color principal del sitio */
+.nav {
+  background-color: pink;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; }
+  .nav .logoBenditoBudin {
+    width: 80px;
+    height: 80%; }
+  .nav .ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+    list-style: none;
+    align-items: center;
+    width: 100%; }
+  .nav .coloresNav:hover {
+    color: white; }
+  .nav .navProductos {
+    color: grey;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 20px;
+    background-color: pink; }
+  .nav .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+.imagenPrincipalIndex {
+  width: 100%;
+  height: 90vh;
+  left: 0px;
+  top: 80px; }
+
+/* FOOTER APLICO BEM */
+.footer {
+  display: block;
+  padding: 10px;
+  background-color: pink;
+  display: absolute;
+  width: 100%; }
+  .footer .footer__logo {
+    width: 80px;
+    height: 80px;
+    display: block; }
+  .footer .footer__logo:hover {
+    animation: popUp 0.5s; }
+  .footer .footer__div {
+    align-items: left;
+    display: flex;
+    padding: 10px;
+    display: absolute; }
+  .footer .footer__info {
+    align-items: center;
+    display: flex; }
+  .footer .footer__item {
+    width: 24px;
+    height: 24px;
+    margin: 0px 10px; }
+  .footer .footer__texto {
+    padding: 8px; }
+
+/* DIV PARA GALERIAS APLICO BEM */
+/* Galeria con productos */
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  margin-top: 50px; }
+  .galeria .galeria__productos {
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; }
+  .galeria .galeria__productos:hover {
+    transform: scale(1.05); }
+
+/* CARD RESPONSIVE */
+/*celulares*/
+/*el nombre de la clase es SELECTOR*/
+@media only screen and (max-width: 900px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    margin: 40px; }
+  .footer__div {
+    display: block;
+    flex-direction: column; } }
+
+@media only screen and (max-width: 600px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px; }
+  .footer__div {
+    display: block;
+    flex-direction: column; } }
+
+.haceTuPedido {
+  background-color: brown;
+  height: 25;
+  text-align: center;
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.haceTuPedido:hover {
+  transform: scale(1.5, 1.5); }
+
+.pedido {
+  text-align: center; }
+
+/* Animations */
+@keyframes popUp {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.05); }
+  100% {
+    transform: scale(1); } }
+
+.logoBenditoBudin:hover {
+  animation: popUp 0.5s; }
